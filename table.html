@@ -1,0 +1,74 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            table {
+                border: 1px solid black;
+            }
+
+            td,
+            th {
+                border: 1px solid black;
+            }
+
+            .cs {
+                background-color: aqua;
+            }
+
+            .DS {
+                background-color: green;
+            }
+
+            .PS {
+                background-color: pink;
+            }
+
+            button:hover {
+               
+                    background-color: #0056b3;
+                    transform: translateY(-2px);
+                    /* Slight upward lift */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <table>
+            <caption>Table</caption>
+            <tr>
+                <th>name</th>
+                <th>subject</th>
+                <th>marks</th>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Pawan</td>
+                <td class="cs">CS</td>
+                <td>99.59</td>
+            </tr>
+            <tr>
+
+                <td colspan="2" class="PS">PS</td>
+
+            </tr>
+            <tr>
+
+                <td class="DS">DS</td>
+                <td>99.69</td>
+            </tr>
+        </table>
+        <button onclick="changecolor()">change color</button>
+        <script>
+            function changecolor() {
+                document.body.style.backgroundColor = "blue";
+            }
+        </script>
+
+    </body>
+
+    </html>
